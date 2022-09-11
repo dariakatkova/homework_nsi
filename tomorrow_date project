@@ -1,0 +1,34 @@
+days = ["sunday", "monday", "tuesday", "wednesday", "thursday", "friday", "saturday"]
+
+months = [ "january", "february", "mach", "april", "may", "june", "july", "august", "september",
+"october", "november", "december"]
+
+length_months = [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31]
+
+# date = ("saturday", 21, 10, 1995)
+# name_day, number_day, number_month, year = date
+
+
+
+def tomorrow(date):
+    date_tomorrow = list(date)   #turning tuple into a list
+    
+    name_day = date_tomorrow[0]     #initialisation
+    number_day = date_tomorrow[1]
+    number_month = date_tomorrow[2]
+    
+    index_day = (days.index(name_day) + 1) % 7    #turning date[0](day of the week) into next day
+    name_day = days[index_day]
+    date_tomorrow[0] = name_day
+    
+    len_month = length_months[date_tomorrow[2]]     #turning date[1](number of a day) into next day
+    
+    if len_month < number_day:             #changing a month if needed
+        number_month = number_month + 1
+        date_tomorrow[2] = number_month
+        
+    number_day = number_day % len_month + 1
+    
+    date_tomorrow[1] = number_day
+       								 #changing a year if needed?
+    return tuple(date_tomorrow)
