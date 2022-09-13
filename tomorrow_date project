@@ -18,22 +18,25 @@ def tomorrow(date):
     number_month = date_tomorrow[2]
     year = date_tomorrow[3]
     
-    index_day = (days.index(name_day) + 1) % 7    #turning date[0](day of the week) into next day
+    index_day = (days.index(name_day) + 1) % len(days)    #turning date[0](day of the week) into next day
     name_day = days[index_day]
     date_tomorrow[0] = name_day
     
     len_month = length_months[date_tomorrow[2]]     #turning date[1](number of a day) into next day
     
     if len_month < number_day:             #changing a month if needed
-        number_month = number_month + 1
+        number_day += 1
     else:
-        number_day = (number_day + 1) % len_month
+        if number_month < len(length_months):
+            number_month += 1
+            number_day = number_day + 1
+        else:
+            number_month = number_month + 1
+            number_day = number_day + 1
+            year = year + 1
         
     date_tomorrow[2] = number_month
     date_tomorrow[1] = number_day
-    
-    if date_tomorrow[1] == 1 and date_tomorrow[2] == 1:        #changing a year
-        year += 1
     date_tomorrow[3] = year
         
     return tuple(date_tomorrow)
