@@ -21,17 +21,17 @@ def tomorrow(date):
     name_day = days[index_day]
     date_tomorrow[0] = name_day
     
-    len_month = length_months[date_tomorrow[2]]     #turning date[1](number of a day) into next day
+    len_month = length_months[date_tomorrow[2] - 1]     #turning date[1](number of a day) into next day
     
-    if len_month < number_day:             #changing a month if needed
+    if len_month > number_day:             #changing a month if needed
         number_day += 1
     else:
         if number_month < len(length_months):
             number_month += 1
-            number_day = number_day + 1
+            number_day = (number_day + 1)% len_month
         else:
             number_month = number_month + 1
-            number_day = number_day + 1
+            number_day = (number_day + 1)
             year = year + 1
                  
     date_tomorrow[2] = number_month
