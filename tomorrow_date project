@@ -31,8 +31,8 @@ def tomorrow(date):
             number_day = (number_day + 1)% len_month
         else:
             number_month = (number_month + 1) % 12
-            number_day = (number_day + 1)
-            year = year + 1
+            number_day = (number_day + 1) % len_month
+            year += 1
                  
     date_tomorrow[2] = number_month
     date_tomorrow[1] = number_day
