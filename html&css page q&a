@@ -1,0 +1,53 @@
+main {
+  border-left-width: 20px;
+  border: 4px solid red;
+  padding: 0;
+  margin: 0;
+}
+
+article {
+  border: 2px dotted #666;
+  margin: 30px auto;
+  padding: 30px 100px;padding: 30px;
+  width: 50%;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+h2, p {
+  background-color: gold;
+  border: 1px solid #AAA;
+  margin: 5px;
+  padding-left: 5em;
+  font-size: 100%;
+}
+
+strong {
+  border: 1px solid black;
+  background-color: tomato;
+  margin: 30px;
+}
+
+
+/* Questions:
+1)-----
+2)Initialement, j'ai pensé que l'element strong va rester dans une ligne, mais avec un décalage de 30 pixels àgauche at à droite - et j'avais raison.
+3) Avant, le décollage entre la boite d'article et la boite de body à gauche et à droite était de taille 30px. Maintenant il est a 5px. Le decollage en haut et en bas reste le même.
+4)-----
+5)-----
+6)-----
+7)Non, parce que on a ajoute un padding? Et vu que c'est un element in-line, le padding s'ajoute que sur la droite et sur la gauche?
+font-size: 100% rend la police de h2 et de p au même taille. Les h2 ont aussi bougés à droite, parce que on a ajouté padding-left:5em. Em est une valeur relative au taille de la police de l'element parent, donc la taille du padding sera differente por p et h2 si on n'ajoute pas font-size: 100%.
+8)-----
+9) Il y a un debordement. Les régles s'appliquent une apres aute, donc on demande "au même temps" borger-left à 4 px et à 20px, ce qui n'est pas possible. Le navigateur applique la dernière ligne - donc border-left est de taille 20px. Si on change l'ordre des lignes, le bordure sera à 4px partout. Donc la prémière ligne est inutuile. Et oui, c'est ce que j'ai supposé va se passer.
+10)-----
+11)La regle s'applique au texte et aux titres dans les boites - ils sont centrés. La régle n'a aucun effet sur la boite elle même.  
+Spécifier auto comme deuxième paramètre indique essentiellement au navigateur de déterminer lui-même les marges gauche et droite, ce qu'il fait en les définissant de manière égale. Cela garantit que les marges gauche et droite seront définies à la même taille.
+12)-----
+13)La boite "article" contient que le texte et les titres. Une largeur de 50% pour les articles s'applique que aux boites jaunes qui contiennent le texte, qui prend 50% de la taille de la boite encadre en rouge. "padding: 30px 100px;" change la taille du padding. La valeur de 50% depend d'element parent, aors que la valeur 30px 100px est fixe.
+14)-----
+15)Nous fixons la taille d'une page, mais beaucoup de ces éléments sont simplement plus grands, nous obtenons donc un chevauchement de texte et des boîtes de contenu.
+16)Tout le texte qui chevauche l'autre texte est masqué. Ce n'est pas une bonne idée, étant donné qu'on ne peut lire que le haut du texte. 
+Il est possible de le rendre lisible en ajoutant une barre de défilement, mais cela me semble fastidieux.
+17)C'est une margin et un padding, mais il y a toujours l'espace ajoutée par navigateur. Le seul chose qu'on peut faire - ajouter pading = 0 et margin = 0, mais on ne  peux pas empecher cet espace blanc.
+*/
