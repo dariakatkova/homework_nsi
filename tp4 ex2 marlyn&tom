@@ -9,10 +9,11 @@
 
 <body>
   <h1>
-    MANIPULATION DES BALISES HTML <br>ET DES SÉLECTEURS CSS
+    MANIPULATION DES BALISES HTML <br> ET DES SÉLECTEURS CSS
   </h1>
+  <main>
   <p>
-    Voici venu le moment d’expérimenter les usages des différentes balises <u>HTML</u> et de composer une page de présentation simple, claire, normalisée et évolutive.
+ Voici venu le moment d’expérimenter les usages des différentes balises <u>H T M L</u> et de composer une page de présentation simple, claire, normalisée et évolutive.
   </p>
   <hr>
   <section>
@@ -21,7 +22,7 @@
       <li>les éléments de <strong>bloc</strong> (<small>div</small>,<small>h1</small>,<small>ul</small>...)</li>
       <li>les éléments <strong>inline</strong> (<small>img</small>, <small>a</small>, <small>span</small>...)</li>
     </ul>
-    <p>Vérifiez que vous avez bien indiqué l'encodage <u>UTF-8</u> grâce à la balise <small>&lt;meta&gt;</small>. (Attention, pour que la phrase précédente s'affiche correctement, il est nécessaire d'utiliser des <em>entités HTML </em>: cherchez sur le web de quoi il s'agit !)</p>
+    <p>Vérifiez que vous avez bien indiqué l'encodage <u>U T F-8</u> grâce à la balise <small>&lt;meta&gt;</small>. (Attention, pour que la phrase précédente s'affiche correctement, il est nécessaire d'utiliser des <em>entités HTML</em>: cherchez sur le web de quoi il s'agit !)</p>
     </section>
     <section>
       <h2>Auteurs de cette page</h2>
@@ -30,10 +31,13 @@
         <li>Marylin <img src="https://dev-katkova231.users.info.unicaen.fr/TW1-2023/TP04/ex2/img/marylin.jpg"> pour le HTML</li>
         <li>Tom <img src="https://dev-katkova231.users.info.unicaen.fr/TW1-2023/TP04/ex2/img/tom.jpg"> pour les feuilles de style</li>
       </ol>
-          <p><strong>Remarque</strong>: les images HTML se comportent par défaut « comme des mots » ; elles sont posées sur la baseline du texte. On peut changer cet alignement en <u>CSS</u> avec la propriété <small>vertical-align</small>.</p>
+          <p><strong>Remarque</strong>: les images HTML se comportent par défaut « comme des mots » ; elles sont posées sur la <em>baseline</em> du texte. On peut changer cet alignement en <u>C S S</u> avec la propriété <small>vertical-align</small>.</p>
     </section>
     <section>
       <h2>Validation</h2> 
-      <p>Nous avons pu valider cette page en utilisant le validateur fourni par le W3C : <a href="http://validator.w3.org">http://validator.w3.org</a>.</p>
+      <p>Nous avons pu valider cette page en utilisant le validateur fourni par le <u>W3C</u> : <a href="http://validator.w3.org">http://validator.w3.org</a>.</p>
+    </section>
+</main>
 </body>
-</html> add colors to text, add grey background, add images to unicaen, add green boxes, change style.css for screen.css in line 7
+
+</html> add images to unicaen, add pink boxes, change style.css for screen.css in line 7
