@@ -4,7 +4,7 @@
   <title>Manipulation des balises HTML et des sélecteurs CSS</title>
   <meta charset="UTF-8" />
   <meta name="author" content="katkova231" />
-  <link rel="stylesheet" media="screen" href="style.css" />
+  <link rel="stylesheet" media="screen" href="screen.css" />
 </head>
 
 <body>
@@ -39,4 +39,4 @@
     </section>
 </main>
 </body>
-</html> add images to unicaen, add pink boxes, change style.css for screen.css in line 7
+</html> add images to unicaen, add pink boxes
