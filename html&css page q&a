@@ -55,7 +55,7 @@ Spécifier auto comme deuxième paramètre indique essentiellement au navigateur
 14)-----
 15)Nous fixons la taille d'une page, mais beaucoup de ces éléments sont simplement plus grands, nous obtenons donc un chevauchement de texte et des boîtes de contenu.
 16)Tout le texte qui chevauche l'autre texte est masqué. Ce n'est pas une bonne idée, étant donné qu'on ne peut lire que le haut du texte. 
-Il est possible de le rendre lisible en ajoutant une barre de défilement, mais cela me semble fastidieux.
+Il est possible de le rendre lisible en ajoutant un ascenseur, mais cela me semble fastidieux.
 17)C'est une margin et un padding d'un element main, mais il y a toujours l'espace ajoutée par navigateur. Le seul chose qu'on peut faire - ajouter pading = 0 et margin = 0, mais on ne  peux pas empecher cet espace blanc.
 L'element parent de main - c'est body.
 */
