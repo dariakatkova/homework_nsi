@@ -9,11 +9,11 @@
 
 <body>
   <h1>
-    MANIPULATION DES BALISES HTML <br> ET DES SÉLECTEURS CSS
+    MANIPULATION DES BALISES HTML <br>ET DES SÉLECTEURS CSS
   </h1>
   <main>
   <p>
- Voici venu le moment d’expérimenter les usages des différentes balises <u>H T M L</u> et de composer une page de présentation simple, claire, normalisée et évolutive.
+    Voici venu le moment d’expérimenter les usages des différentes balises <u>H T M L</u> et de composer une page de présentation simple, claire, normalisée et évolutive.
   </p>
   <hr>
   <section>
@@ -39,5 +39,4 @@
     </section>
 </main>
 </body>
-
 </html> add images to unicaen, add pink boxes, change style.css for screen.css in line 7
