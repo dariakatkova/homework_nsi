@@ -1,0 +1,41 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+  border-left: 20px solid red;
+  border-right: 20px solid red;
+  text-align: center;
+  font-size: 3vw;
+  padding:50px;
+}
+
+h2 {
+  background-color:green;
+  color:white;
+}
+
+u {
+  text-decoration:underline;
+  text-decoration-style: dotted;
+}
+
+hr {
+  height: 0px;
+  border: none;
+  border-top: 5px solid green;
+  width:70%;
+}
+
+strong {
+  color: green;
+}
+
+small {
+  background-color: #d3d3d3;
+  border-radius: 50px; 
+}
+
+em {
+  
+}
