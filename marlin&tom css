@@ -2,9 +2,13 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
+p, ul, ol {
+  font-size: 12px;
+}
+
 h1 {
-  border-left: 20px solid red;
-  border-right: 20px solid red;
+  border-left: 20px solid brown;
+  border-right: 20px solid brown;
   text-align: center;
   font-size: 3vw;
   padding:50px;
@@ -13,6 +17,8 @@ h1 {
 h2 {
   background-color:green;
   color:white;
+  padding-left:30px;
+  font-style: italic;
 }
 
 u {
@@ -37,5 +43,20 @@ small {
 }
 
 em {
-  
+  color: orange;
+  font-style: normal;
+}
+
+ul {
+  list-style-type:square;
+}
+
+img {
+  vertical-align: ;
+  color: pink;
+}
+
+a {
+  border: 1px solid orange;
+  color: orange;
 }
