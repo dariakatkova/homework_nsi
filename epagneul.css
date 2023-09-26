@@ -43,6 +43,13 @@ figure {
   width: 50%;
 }
 
+figcaption {
+  position: absolute;
+  width: 70%; 
+  text-align:center;
+  
+}
+
 p {
 	padding-left:20px;
     width:90%;
