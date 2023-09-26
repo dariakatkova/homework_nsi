@@ -1,0 +1,74 @@
+html {
+  background-color: #E0E0E0;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background-color: #f6fcea;
+  max-width: 60em;
+  margin: 0 auto; 
+}
+
+h1 {
+	background-color: #FFA500;
+	text-align: center;
+	padding:50px;
+	margin: 0;
+} 
+
+h2 {
+	font-style: italic;
+	padding-left:20px;
+ }
+ 
+hr {
+	height: 0px;
+    border: none;
+    border-top: 1px solid #FFA500;
+    width:80%;
+}
+
+img {
+    padding: 10px;
+    padding-top:70px;
+    margin-left: 40%;
+    border: 1px solid black;
+    background-color: white;
+    width: 440px;
+}
+
+figure {
+  border-top: none;
+  padding-top: 0;
+  width: 50%;
+}
+
+figcaption {
+  position: absolute;
+  width: 45%; 
+  text-align: center;
+  padding-top: 15px;
+}
+
+p {
+    padding-left:20px;
+    padding-right: 20px;
+    width:90%;
+}
+footer { 
+    background-color:black;
+    text-align: right;
+    color: white;
+    padding: 20px;
+}
+ a {
+    color: #d3d3d3;
+ }
+
+span {
+	color: red;
+}
+
+ul {
+	list-style-image: url(https://dev-katkova231.users.info.unicaen.fr/TW1-2023/TP05/ex1/paw-icon.png);
+}
