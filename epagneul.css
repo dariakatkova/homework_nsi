@@ -30,9 +30,9 @@ hr {
 
 img {
     padding: 10px;
-	padding-top:60px;
-	margin-left: 40%;
-	border: 1px solid black;
+    padding-top:70px;
+    margin-left: 40%;
+    border: 1px solid black;
     background-color: white;
     width: 440px;
 }
@@ -45,12 +45,22 @@ figure {
 
 figcaption {
   position: absolute;
-  width: 70%; 
-  text-align:center;
-  
+  width: 65%; 
+  text-align: center;
+  padding-top: 15px;
 }
 
 p {
-	padding-left:20px;
+    padding-left:20px;
+    padding-right: 20px;
     width:90%;
 }
+footer { 
+    background-color:black;
+    text-align: right;
+    color: white;
+    padding: 20px;
+}
+ a {
+    color: #d3d3d3;
+ }
