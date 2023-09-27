@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="fr-FR">
+<head>
+  <meta charset="UTF-8">
+  <title>TP05 - ex2</title>
+  <link rel="stylesheet" href="style.css">
+  <meta name="author" content="katkova231">
+</head>
+
+<body>
+ <nav id="menuVert">
+  <a href="#browsers">Browsers</a>
+  <a href="#WD">Web design</a>
+  <a href="#SE">Search engines</a>
+  <a href="#freeware">Freeware</a>
+  <a href="#tech">Technology</a>
+</nav> 
+<br>
+<br>
+<br>
+<nav id="menuHor">
+  <ul>
+    <li><a href="#accueil">Accueil</a></li>
+    <li><a href="#R1">Rubrique 1</a></li>
+    <li><a href="#R2">Rubrique 2</a></li>
+    <li><a href="#R3">Rubrique 3</a></li>
+    <li><a href="#R4">Rubrique 4</a></li>
+  </ul>
+</nav>
+</body>  https://webplatform.github.io/docs/tutorials/creating_basic_navigation_menus/
