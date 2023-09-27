@@ -1,0 +1,7 @@
+.menuVert {
+	color: blue;
+}
+
+.menuHor {
+	border: 1px solid blue;
+}
