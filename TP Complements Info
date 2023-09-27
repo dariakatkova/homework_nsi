@@ -1,0 +1,106 @@
+mu = 0.1
+
+def f(x):
+    return mu * x * (1 - x)
+
+>>>f(0.2)
+0.016000000000000004
+
+def iterf(x0, n):
+    for i in range(n):
+        x0 = f(x0)
+    return x0
+
+>>>iterf(0.2, 10)
+1.571646724889481e-11
+
+val_mu = [1,2.5,3.5,3.565,3.94,3.999]
+couples = [(.2,10),(.2,100),(.2,101),(.75,100),(.75,10000)]
+
+for mu in val_mu:
+    for (x0,n) in couples:
+        print(mu,"-", couple, "-",  round(iterf(x0,n),4), end="" )
+        print("")
+
+>>>1 - (0.2, 10) - 0.0615
+1 - (0.2, 10) - 0.0092
+1 - (0.2, 10) - 0.0092
+1 - (0.2, 10) - 0.0093
+1 - (0.2, 10) - 0.0001
+2.5 - (0.2, 10) - 0.6
+2.5 - (0.2, 10) - 0.6
+2.5 - (0.2, 10) - 0.6
+2.5 - (0.2, 10) - 0.6
+2.5 - (0.2, 10) - 0.6
+3.5 - (0.2, 10) - 0.8683
+3.5 - (0.2, 10) - 0.8269
+3.5 - (0.2, 10) - 0.5009
+3.5 - (0.2, 10) - 0.8269
+3.5 - (0.2, 10) - 0.8269
+3.565 - (0.2, 10) - 0.8912
+3.565 - (0.2, 10) - 0.8083
+3.565 - (0.2, 10) - 0.5524
+3.565 - (0.2, 10) - 0.8335
+3.565 - (0.2, 10) - 0.8083
+3.94 - (0.2, 10) - 0.0608
+3.94 - (0.2, 10) - 0.966
+3.94 - (0.2, 10) - 0.1294
+3.94 - (0.2, 10) - 0.3799
+3.94 - (0.2, 10) - 0.8675
+3.999 - (0.2, 10) - 0.1424
+3.999 - (0.2, 10) - 0.8043
+3.999 - (0.2, 10) - 0.6294
+3.999 - (0.2, 10) - 0.9539
+3.999 - (0.2, 10) - 0.7814
+
+import matplotlib.pyplot as plt
+import numpy as np
+import random
+
+#axis_x0 = np.arange(0.0, 1.0, 0.01)    #arrange(start, stop, step) - generating values
+#f_x0 = [ f(x0) for x0 in t ]           #values of x0 for f(x)
+#fig, ax = plt.subplots()
+#ax.plot(axis_x0, f_x0)
+#ax.grid()                              #adds a grid on the background
+#plt.show() 
+
+axis_x = np.arange(0.0,10, 1.0)    #arrange(start, stop, step) - generating values    x=y function
+axis_y = axis_x   #values of x0 for f(x)
+fig, ax = plt.subplots()
+ax.plot(axis_x, axis_y)
+ax.grid()       #adds a grid on the background
+plt.show()
+
+
+>>>mu = 2.0         #je suppose que le dessin est le même que pour 4.0
+axis_x0 = np.arange(0.0, 1.0, 0.01)    #arrange(start, stop, step) - generating values
+f_x0 = [ f(x0) for x0 in axis_x0 ]    #values of x0 for f(x)
+fig, ax = plt.subplots()
+ax.plot(axis_x0, f_x0)
+ax.grid()       #adds a grid on the background
+plt.show() 
+
+<input>:4: RuntimeWarning: More than 20 figures have been opened. Figures created through the pyplot interface (`matplotlib.pyplot.figure`) are retained until explicitly closed and may consume too much memory. (To control this warning, see the rcParam `figure.max_open_warning`).
+
+def iteration(k):
+    list = []    
+    for i in range(k): 
+        value = random.random()
+        list.append(f(value))
+    return list
+
+>>>iteration(10)
+[0.45813277183561957, 0.06841225107861797, 0.47349568300427386, 0.32827672359186044, 0.37546422452500144, 0.4830175952937215, 0.43442437917477944, 0.39325275401806514, 0.3439658555263546, 0.41054749981224886]
+
+def iter2():         #proposé par le prof #mu = 4.0
+    u=random.random()
+    for i in range(100000) :
+        u=f(u)
+    y = []
+    for j in range(200) :
+        y += [u]
+        u = f(u)
+    return y
+
+>>>iter2()
+[0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5]
