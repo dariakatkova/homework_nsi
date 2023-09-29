@@ -1,7 +1,38 @@
 .menuVert {
 	color: blue;
+    width: 400px;
+    border: 1px solid blue;
+}
+
+
+.menuVert a {
+  background-color: #c1e1ec; 
+  color: blue; 
+  display: block; /* Make the links appear below each other */
+  padding: 12px; /* Add some padding */
+  text-decoration: none; /* Remove underline from links */
+  border: 1px solid blue;
+  border-left: 3px solid blue;
+  margin: 2px ;
+  text-align: left;
 }
 
 .menuHor {
-	border: 1px solid blue;
+  border: 1px solid blue;
+  text-align:center;
+  width: 483px;
+}     
+
+.menuHor a {
+  display: inline-block;
+  color: blue;
+  text-align: center;
+  padding: 10px;
+  text-decoration: none;
+  
+}
+
+.menuHor a:hover {
+  background-color: blue;
+  color: white;
 }
