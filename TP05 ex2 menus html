@@ -8,7 +8,7 @@
 </head>
 
 <body>
- <nav id="menuVert">
+ <nav class="menuHor">
   <a href="#browsers">Browsers</a>
   <a href="#WD">Web design</a>
   <a href="#SE">Search engines</a>
@@ -18,13 +18,12 @@
 <br>
 <br>
 <br>
-<nav id="menuHor">
-  <ul>
-    <li><a href="#accueil">Accueil</a></li>
-    <li><a href="#R1">Rubrique 1</a></li>
-    <li><a href="#R2">Rubrique 2</a></li>
-    <li><a href="#R3">Rubrique 3</a></li>
-    <li><a href="#R4">Rubrique 4</a></li>
-  </ul>
+<nav class="menuVert">
+    <a href="#accueil" class="active">Accueil</a></li>
+    <a href="#R1">Rubrique 1</a>
+    <a href="#R2">Rubrique 2</a>
+    <a href="#R3">Rubrique 3</a>
+    <a href="#R4">Rubrique 4</a>
 </nav>
-</body>  https://webplatform.github.io/docs/tutorials/creating_basic_navigation_menus/
+</body>  
+</html>
