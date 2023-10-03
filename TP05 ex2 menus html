@@ -19,7 +19,7 @@
 <br>
 <br>
 <nav class="menuVert">
-    <a href="#accueil" class="active">Accueil</a></li>
+    <a href="#accueil" class="active">Accueil</a>
     <a href="#R1">Rubrique 1</a>
     <a href="#R2">Rubrique 2</a>
     <a href="#R3">Rubrique 3</a>
