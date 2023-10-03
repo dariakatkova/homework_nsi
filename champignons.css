@@ -23,7 +23,19 @@ section {
   height: 30em;
 }
 
-.box {
+.box {.box {
+  background-color: gold;
+  background-image: url('../img/champi.png');
+}
+
+#pixels {
+  background-size: 50px 100px;
+}
+
+#pourcents {
+  background-size: 44px 50px;
+}
+
   border: 1px solid black;
   width: 10em;
   height: 5em;
@@ -34,14 +46,15 @@ section {
 /***********************************/
 /* Ajoutez vos règles ci-dessous ! */
 /***********************************/
-
 .box {
   background-color: gold;
   background-image: url('../img/champi.png');
 }
 
-#pixels img{
-  height: 50px;
-  width: 100px;
+#pixels {
+  background-size: 50px 100px;
 }
 
+#pourcents {
+  background-size: 44px 50px;
+}
