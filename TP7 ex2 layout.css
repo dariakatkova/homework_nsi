@@ -1,1 +1,27 @@
+/*
+Les items du menu doivent faire 15em de largeur
+L'encadré bleu doit faire 200 pixels de large, tandis que l'article principal doit prendre tout le reste de la largeur.
+L'encadré bleu doit être centré verticalement par rapport à l'article.
+*/
 
+.menu ul {
+    list-style-type: none;
+    display: grid;
+    grid-template-rows: 50px 50px;
+    grid-template-columns: 15em 15em;
+    grid-gap: 10px;
+    justify-content: center;
+}
+
+.menu ul li {
+    background-color: #049660;
+    text-align: center;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.content {
+    display: grid;
+    grid-template-columns: 1fr 200px;
+    align-items: center;
+}
