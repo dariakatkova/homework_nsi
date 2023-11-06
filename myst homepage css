@@ -35,10 +35,17 @@ figcaption{
   padding-left: 130px;
 }
 
+hr {
+  border: 1px solid navy;
+}
 
 /*interactivité*/
 
 figure img:hover {
   filter: blur(1px);
 }
-/* toutes les choses en rapport avec le menu seront déplaces en un fichier css separées, et le fichier base.css sera un ficchier commun pour tous les pages du site*/
+
+figure img:hover figcaption {
+ display: block; 
+}
+/* toutes les choses en rapport avec le menu seront déplaces en un fichier css separées, et le fichier base.css sera un fichier commun pour tous les pages du site*/
