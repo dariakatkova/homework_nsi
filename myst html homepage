@@ -4,43 +4,63 @@
         <meta charset="UTF-8">
         <meta name="author" content="katkova231">
         <title>Myst</title>
-        <link rel="stylesheet" href="ui/base.css">
+        <link rel="stylesheet" href="base.css">    <!--change to ui/base.css-->
     </head>
+          
     <body>
+      
       <header class="header">
         <img src="ui/images/banner.jpg" alt="Banniere">
       </header>
+        
       <main>
-      <nav>
-      <figure class="sujet">
-          <a href="sujet.html"><img src="ui/images/forest.jpg" alt="image"></a>
-          <figcaption>Le sujet du jeu</figcaption>
-      </figure>
-      <figure class="creation">
-          <a href=""><img src="ui/images/mechanisms.jpg" alt="image"></a>
-          <figcaption>La création des jeux</figcaption>
-      </figure>
-      <figure class="ordinateurs">
-          <a href=""><img src="ui/images/night.png" alt="image"></a>
-          <figcaption>Myst et les premières ordinateurs</figcaption>
-      </figure>
-      <figure class="auteurs">
-          <a href=""><img src="ui/images/port.jpg" alt="image"></a>
-          <figcaption>Les auteurs</figcaption>
-      </figure>
+        
+        <nav>       <!--menu-->
+        
+      	  <figure class="sujet">
+          	<a href="sujet.html"><img src="ui/images/forest.jpg" alt="image"></a>
+          	<figcaption>Le sujet du jeu</figcaption>
+      	  </figure>
+          
+      	  <figure class="creation">
+            <a href=""><img src="ui/images/mechanisms.jpg" alt="image"></a>
+            <figcaption>La création des jeux</figcaption>
+          </figure>
+            
+          <figure class="ordinateurs">
+            <a href=""><img src="ui/images/night.png" alt="image"></a>
+            <figcaption>Myst et les premières ordinateurs</figcaption>
+          </figure>
+            
+          <figure class="auteurs">
+             <a href=""><img src="ui/images/port.jpg" alt="image"></a>
+            <figcaption>Les auteurs</figcaption>
+          </figure>
+            
       </nav>
-      <h3>Explore the Myst: Unveil the Secrets of a Legendary World</h3>
-      <p>Welcome to the mystical realm of Myst, where adventure, mystery, and puzzles intertwine to create an unforgettable gaming experience. Step into a universe like no other, where each turn reveals new enigmas waiting to be solved, and every page of the past hides a piece of the grand narrative.</p>
-      <h4>What is Myst?</h4>
-      <p>Myst is not just a game; it's a journey into a breathtaking and mysterious world. Crafted by the genius of Rand and Robyn Miller, this iconic title has captured the hearts and minds of gamers for decades. It's a game that challenges your intellect, engages your curiosity, and immerses you in a narrative that unfolds at your own pace.</p>
-      <h4>What Awaits You?</h4>
-      <p>As you explore this website, you'll find a treasure trove of information about Myst. Dive into the lore of the game, meet its creators, and learn about the development process. Uncover the intricate puzzles, explore the visually stunning worlds, and discover the secrets that have enthralled players since its inception.</p>
-      <h4>Your Journey Begins Here</h4>
-      <p>Whether you're a die-hard fan or a newcomer to the Myst universe, this website is your gateway to an unforgettable adventure. Join us in unraveling the mysteries, sharing your experiences, and connecting with fellow adventurers who have been captivated by the allure of Myst.</p>
-      <p>Navigate through the pages, solve the puzzles, and immerse yourself in the unparalleled world of Myst. Your journey awaits, and the secrets of Myst are yours to discover.</p>
-      <p>Begin your adventure now.</p>
+            <!--ici un peu de texte explicatif-->
+            
+        <h3>Explore the Myst: Unveil the Secrets of a Legendary World</h3>
+        <p>Welcome to the mystical realm of Myst, where adventure, mystery, and puzzles intertwine to create an unforgettable gaming experience. Step into a universe like no other, where each turn reveals new enigmas waiting to be solved, and every page of the past hides a piece of the grand narrative.</p>
+            
+        <h4>What is Myst?</h4>
+        <p>Myst is not just a game; it's a journey into a breathtaking and mysterious world. Crafted by the genius of Rand and Robyn Miller, this iconic title has captured the hearts and minds of gamers for decades. It's a game that challenges your intellect, engages your curiosity, and immerses you in a narrative that unfolds at your own pace.</p>
+            
+        <h4>What Awaits You?</h4>
+        <p>As you explore this website, you'll find a treasure trove of information about Myst. Dive into the lore of the game, meet its creators, and learn about the development process. Uncover the intricate puzzles, explore the visually stunning worlds, and discover the secrets that have enthralled players since its inception.</p>
+        <h4>Your Journey Begins Here</h4>
+        <p>Whether you're a die-hard fan or a newcomer to the Myst universe, this website is your gateway to an unforgettable adventure. Join us in unraveling the mysteries, sharing your experiences, and connecting with fellow adventurers who have been captivated by the allure of Myst.</p>
+        <p>Navigate through the pages, solve the puzzles, and immerse yourself in the unparalleled world of Myst. Your journey awaits, and the secrets of Myst are yours to discover.</p>
+        <p>Begin your adventure now.</p>
+            
       </main>
       <hr>
-      <footer> texte ecrit par chatgpt, images trouvees sur internet</footer>
+      <footer> texte ecrit par <a href="https://openai.com/chatgpt">ChatGpt</a>, images trouvées sur internet : 
+        <ul>
+          <li><a href="https://adventuregamers.com/games/view/42337"> Adventure Gamers</a></li>
+          <li><a href="https://www.cbr.com/myst-vr-release-improve-original/">Myst: How the VR Release Will Improve the Original Game</a></li>
+          <li><a href="https://www.geekwire.com/2021/myst-remake-confirmed-aug-26-release-date-pc-mac-oculus-xbox-game-pass/">‘Myst’ remake confirmed for Aug. 26 release date, on PC, Mac, Oculus, and Xbox Game Pass</a></li>
+        </ul>
+      </footer>
 </body>
 </html>
