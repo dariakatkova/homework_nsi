@@ -1,0 +1,44 @@
+@font-face {
+  font-family:"Myst";
+  src: url('fonts/myst/EXILE12.woff') format("woff");
+  font-weight: normal;
+  font-style:normal;
+  
+}
+
+body {
+  background-color: #9abddc;
+  font-family: "Myst", serif;  
+}
+
+.header img {
+  max-width:100%;
+  border-radius: 10px 10px; 
+}
+
+nav {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+figure img {
+  width: 400px;
+  border-radius: 10px 10px; 
+  margin: 0px;
+}
+
+figcaption{
+  display: none;
+}
+
+.sujet, .ordinateurs{
+  padding-left: 130px;
+}
+
+
+/*interactivité*/
+
+figure img:hover {
+  filter: blur(1px);
+}
+/* toutes les choses en rapport avec le menu seront déplaces en un fichier css separées, et le fichier base.css sera un ficchier commun pour tous les pages du site*/
